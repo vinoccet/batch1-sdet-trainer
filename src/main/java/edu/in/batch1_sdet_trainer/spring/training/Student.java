@@ -1,7 +1,14 @@
 package edu.in.batch1_sdet_trainer.spring.training;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Student {
     private int age;
+
+    public Student(int age) {
+        this.age = age;
+    }
 
     public int getAge() {
         return age;
@@ -9,7 +16,7 @@ public class Student {
 
     public void setAge(int age) {
         System.out.println("setting age");
-        if(age > 0) {
+        if (age > 0) {
             this.age = age;
         } else {
             this.age = 0;

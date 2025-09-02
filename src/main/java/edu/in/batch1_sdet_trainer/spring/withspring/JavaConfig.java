@@ -5,9 +5,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class SpringJavaConfig {
+public class JavaConfig {
     @Bean
     public Student getStudent(){
-        return new Student();
+        return new Student(40);
     }
 }
